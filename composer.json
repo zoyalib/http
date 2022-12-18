@@ -1,0 +1,30 @@
+{
+  "name": "zoyalib/http",
+  "description": "Zoya Http Library",
+  "type": "library",
+  "keywords": [
+    "zoya",
+    "framework",
+    "http"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zoya Community",
+      "homepage": "https://github.com/zoyalib/framework/graphs/contributors"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/zoyalib/framework/issues",
+    "source": "https://github.com/zoyalib/framework"
+  },
+  "require": {
+    "php": ">=8.2",
+    "psr/http-message": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zoya\\Http\\": "."
+    }
+  }
+}
