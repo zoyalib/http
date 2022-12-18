@@ -18,6 +18,8 @@ abstract class AbstractKernel implements KernelInterface
     {
         $runner = new Runner($this->getPipeline());
 
+        $request->getBody()->rewind();
+
         return $runner->handle($request);
     }
 
