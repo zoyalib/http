@@ -25,7 +25,7 @@ final class Runner implements RequestHandlerInterface
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        if (! $this->pipeline->valid()) {
+        if ($this->pipeline->isEmpty()) {
             throw new RuntimeException(
                 'The middleware pipeline did not return a response. The end of the pipeline reached'
             );
